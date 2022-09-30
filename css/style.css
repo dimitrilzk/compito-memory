@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 #container {
     margin: auto;
     width: 900px;
@@ -11,5 +14,8 @@
     width: 200px;
     height: 200px;
     border: 1px solid gray;
-    
+    font-size: 100px;
+    text-align: center;
+    margin-block: 10px;
+    padding-top: 20px;
 }
