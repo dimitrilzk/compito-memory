@@ -35,7 +35,7 @@ function uguali(eventClick) {
     animalecard2 = eventClick.target;
   }
   if (animalecard === animalecard2) {
-    animalecard.innerHTML.style = "background-color: black";
+    // animalecard.innerHTML.style = "background-color: black";
     animalecard2.style = "background-color: black";
   }
 }
