@@ -3,6 +3,26 @@ let secondcard;
 let cards = document.getElementsByClassName("cards");
 function flip(userClick) {
   userClick.target.classList.add("clicked");
+  if (firstcard === undefined) {
+    firstcard = userClick.target;
+  } else {
+    secondcard = userClick.target;
+    for (let i = 0; i < cards.length; i++) {
+      cards[i].removeAttribute("onclick");
+    }
+    setTimeout(function () {
+      let sonoUgali = controllaElementi();
+      if (sonoUgali === true) {
+        firstcard.classList.replace("clicked", "match");
+        secondcard.classList.replace("clicked", "match");
+      } else {
+        firstcard.classList.remove("clicked");
+        secondcard.classList.remove("clicked");
+      }
+      firstcard = undefined;
+      secondcard = undefined;
+    });
+  }
 }
 // let arrayAnimali = [
 //   "🐱",
