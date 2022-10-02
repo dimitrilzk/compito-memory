@@ -1,21 +1,27 @@
-let arrayAnimali = [
-  "🐱",
-  "🦉",
-  "🐾",
-  "🦄",
-  "🦋",
-  "🐛",
-  "🐝",
-  "🐬",
-  "🐱",
-  "🦉",
-  "🐾",
-  "🦄",
-  "🦋",
-  "🐛",
-  "🐝",
-  "🐬",
-];
+let firstcard;
+let secondcard;
+let cards = document.getElementsByClassName("cards");
+function flip(userClick) {
+  userClick.target.classList.add("clicked");
+}
+// let arrayAnimali = [
+//   "🐱",
+//   "🦉",
+//   "🐾",
+//   "🦄",
+//   "🦋",
+//   "🐛",
+//   "🐝",
+//   "🐬",
+//   "🐱",
+//   "🦉",
+//   "🐾",
+//   "🦄",
+//   "🦋",
+//   "🐛",
+//   "🐝",
+//   "🐬",
+// ];
 
 // let container = document.getElementById("container");
 

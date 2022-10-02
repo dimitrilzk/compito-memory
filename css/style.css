@@ -19,3 +19,6 @@
     margin-block: 10px;
     padding-top: 20px;
 }
+.clicked {
+    background-color: blue;
+}
