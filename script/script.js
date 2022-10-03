@@ -21,11 +21,15 @@ function flip(userClick) {
       }
       firstcard = undefined;
       secondcard = undefined;
-      for (let i = 0; i < cards.length; i++) {
-        cards[i].setAttribute("onclick", "flip(event)");
-        firstcard = undefined;
-        secondcard = undefined;
+      let carteRimanenti = document.querySelectorAll(".cards:not(.match)");
+      for (let i = 0; i < carteRimanenti.length; i++) {
+        carteRimanenti[i].setAttribute("onclick", "flip(event)");
       }
+      // for (let i = 0; i < cards.length; i++) {
+      //   cards[i].setAttribute("onclick", "flip(event)");
+      //   firstcard = undefined;
+      //   secondcard = undefined;
+      // }
     }, 1000);
   }
 }
