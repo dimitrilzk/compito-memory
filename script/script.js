@@ -23,6 +23,8 @@ function flip(userClick) {
       secondcard = undefined;
       for (let i = 0; i < cards.length; i++) {
         cards[i].setAttribute("onclick", "flip(event)");
+        firstcard = undefined;
+        secondcard = undefined;
       }
     }, 1000);
   }

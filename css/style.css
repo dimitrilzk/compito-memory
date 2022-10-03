@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-#container {
+.container {
     margin: auto;
     width: 900px;
     background-color: antiquewhite;
@@ -10,18 +10,21 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#container div {
+.container div {
     width: 200px;
     height: 200px;
     border: 1px solid gray;
-    font-size: 100px;
+    font-size: 0px;
     text-align: center;
     margin-block: 10px;
     padding-top: 20px;
 }
 .clicked {
     background-color: blue;
+    font-size: 100px;
+    
 }
 .match {
     background-color: green;
+    font-size: 100px;
 }
