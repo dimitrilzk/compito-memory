@@ -21,7 +21,17 @@ function flip(userClick) {
       }
       firstcard = undefined;
       secondcard = undefined;
-    });
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].setAttribute("onclick", "flip(event)");
+      }
+    }, 1000);
+  }
+}
+function controllaElementi() {
+  if (firstcard.innerHTML === secondcard.innerHTML) {
+    return true;
+  } else {
+    return false;
   }
 }
 // let arrayAnimali = [
